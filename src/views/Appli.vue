@@ -1,5 +1,12 @@
 <template>
-  <button @click="play">Play a sound</button>
+  <div>
+    <button @click="playPerfect">Play a sound</button>
+    <button @click="playPercussion">Play a sound</button>
+    <button @click="playPiano">Play a sound</button>
+    <button @click="playTimbales">Play a sound</button>
+    <button @click="playBass">Play a sound</button>
+    <button @click="playBass2">Play a sound</button>
+  </div>
 </template>
 
 <script>
@@ -13,16 +20,15 @@ import bass2Sfx from '../assets/bass2.mp3'
 
 export default {
   setup() {
-    const [play] = useSound(perfectSfx)
-    const [play] = useSound(percussionSfx)
-    const [play] = useSound(pianoSfx)
-    const [play] = useSound(perfectSfx)
-    const [play] = useSound(perfectSfx)
-    const [play] = useSound(perfectSfx)
-    const [play] = useSound(perfectSfx)
+    const [playPerfect] = useSound(perfectSfx)
+    const [playPercussion] = useSound(percussionSfx)
+    const [playPiano] = useSound(pianoSfx)
+    const [playTimbales] = useSound(timbalesSfx)
+    const [playBass] = useSound(bassSfx)
+    const [playBass2] = useSound(bass2Sfx)
 
     return {
-      play,
+      playPerfect, playPercussion,playPiano,playTimbales,playBass,playBass2
     }
   },
 }

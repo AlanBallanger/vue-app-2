@@ -1,6 +1,7 @@
 <template>
   <div class="home">
-    <a>Bonjour, je suis propre !</a>
+    <a style="font-size: 50px">Site de composition de musiques</a><br><br>
+    <img class="image" src="https://linkaband.com/assets/images/searchpages/Base-dj.jpg" />
   </div>
 </template>
 
@@ -15,3 +16,10 @@ export default {
   }
 }*/
 </script>
+
+<style scoped>
+  .image{
+    width: 1000px;
+
+  }
+</style>

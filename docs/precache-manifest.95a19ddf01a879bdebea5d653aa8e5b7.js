@@ -1,27 +1,39 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3701d70bbe400d8a7e39",
-    "url": "/vue-app-2/css/app.5c9713c3.css"
+    "revision": "3f4e88f92a976e40f1fd02668a6a0581",
+    "url": "/vue-app-2/bass.mp3"
   },
   {
-    "revision": "ad83f7a6515aac7ca1ebb264178e0f3b",
+    "revision": "351f53e6bbce40cde7ee3d2620be4f46",
+    "url": "/vue-app-2/bass2.mp3"
+  },
+  {
+    "revision": "bc7dd2643492d52fb0eb",
+    "url": "/vue-app-2/css/about.8106e0de.css"
+  },
+  {
+    "revision": "e3386028ef3894e0f5f3",
+    "url": "/vue-app-2/css/app.c802df27.css"
+  },
+  {
+    "revision": "1f103c402674a6d3077b4a7a93f128ee",
     "url": "/vue-app-2/index.html"
   },
   {
-    "revision": "247e41da6bfcb994b819",
-    "url": "/vue-app-2/js/about.5ad10937.js"
+    "revision": "bc7dd2643492d52fb0eb",
+    "url": "/vue-app-2/js/about.3e3e572e.js"
   },
   {
-    "revision": "3701d70bbe400d8a7e39",
-    "url": "/vue-app-2/js/app.0f26fe4e.js"
+    "revision": "e3386028ef3894e0f5f3",
+    "url": "/vue-app-2/js/app.df94d8f8.js"
   },
   {
     "revision": "24b4eb07a79b20228e01",
     "url": "/vue-app-2/js/chunk-2d2250d1.bfcf5ef4.js"
   },
   {
-    "revision": "d4e9bf24c8671691ebc8",
-    "url": "/vue-app-2/js/chunk-vendors.7788d546.js"
+    "revision": "72ee93238ce5c8bbc805",
+    "url": "/vue-app-2/js/chunk-vendors.b30ebf3b.js"
   },
   {
     "revision": "a20c75afa1f0a984f0883b71519b2755",
@@ -52,7 +64,23 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/vue-app-2/media/timbales.a9a02d33.mp3"
   },
   {
+    "revision": "d35e556b8b564c2bb288417b7ab68edb",
+    "url": "/vue-app-2/percussion.mp3"
+  },
+  {
+    "revision": "1400d9c2aecb341c787b63279582b632",
+    "url": "/vue-app-2/perfect.mp3"
+  },
+  {
+    "revision": "0dd7d88520952bd1ba2c2ef5a7f5a9ca",
+    "url": "/vue-app-2/piano.mp3"
+  },
+  {
     "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
     "url": "/vue-app-2/robots.txt"
+  },
+  {
+    "revision": "a9a02d338cc0e727fd774d0773a2f766",
+    "url": "/vue-app-2/timbales.mp3"
   }
 ]);

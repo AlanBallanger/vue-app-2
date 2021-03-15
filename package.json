@@ -11,6 +11,8 @@
     "core-js": "^3.6.5",
     "register-service-worker": "^1.7.1",
     "vue": "^2.6.11",
+    "vue-audio-recorder": "^3.0.1",
+    "vue-audio-visual": "^2.2.2",
     "vue-router": "^3.2.0",
     "vue-use-sound": "^1.1.1"
   },

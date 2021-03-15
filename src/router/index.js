@@ -1,10 +1,12 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import AudioRecorder from 'vue-audio-recorder'
 import AudioVisual from 'vue-audio-visual'
 
 Vue.use(VueRouter)
 Vue.use(AudioVisual)
+Vue.use(AudioRecorder)
 
 const routes = [
   {

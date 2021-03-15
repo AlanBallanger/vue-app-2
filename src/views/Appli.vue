@@ -7,6 +7,7 @@
     <button class="button" @click="playTimbales"><img class="image" src="https://mjcgex.fr/wp-content/uploads/2019/06/balafon-cours-300x167.jpg" /></button>
     <button class="button" @click="playBass"><img class="image" src="https://www.woodbrass.com/images/SQUARE400/woodbrass/ROLAND+HANDSONIC+HPD20.JPG" /></button>
     <button class="button" @click="playBass2"><img class="image" src="https://thumbs.static-thomann.de/thumb/orig/pics/bdb/416099/13471951_800.jpg" /></button>
+    <button class="button" @click="playChameleon"><img class="image" src="https://i.pinimg.com/236x/c9/56/65/c956654a2e1343dc2298663b158c657d--lou-dorfsman-logo-musik.jpg" /></button>
 
     <div class="audio">
     <h1>Recorder/Analyser</h1>
@@ -14,15 +15,7 @@
       <audio-recorder
         upload-url="YOUR_API_URL"
         :attempts="10"
-        :time="5"
-        :headers="headers"
-        :before-recording="callback"
-        :pause-recording="callback"
-        :after-recording="callback"
-        :select-record="callback"
-        :before-upload="callback"
-        :successful-upload="callback"
-        :failed-upload="callback"/>
+        :time="5"/>
       </div>
       <div class="analyzer">
         <select v-on:change="choose" id="selector">
@@ -32,6 +25,7 @@
           <option value="4">Timbales</option>
           <option value="5">TrucChelou</option>
           <option value="6">Bass2</option>
+          <option value="7">Musique</option>
         </select>
         <av-bars audio-class="SelectInstru"
         caps-color="#FFF"
@@ -55,6 +49,7 @@ import pianoSfx from '../assets/piano.mp3'
 import timbalesSfx from '../assets/timbales.mp3'
 import bassSfx from '../assets/bass.mp3'
 import bass2Sfx from '../assets/bass2.mp3'
+import chameleon from '../assets/Chameleon.mp3'
 
 let soundRecorded = null;
 
@@ -64,7 +59,7 @@ export default {
       showHasan:true,
       recorder:null,
       value:0,
-      instruments:["", "/perfect.mp3", "/percussion.mp3", "/piano.mp3", "/timbales.mp3", "/bass.mp3", "/bass2.mp3"]
+      instruments:["", "/perfect.mp3", "/percussion.mp3", "/piano.mp3", "/timbales.mp3", "/bass.mp3", "/bass2.mp3", "/Chameleon.mp3"]
     }
   },
   methods:{
@@ -104,11 +99,10 @@ export default {
     const [playTimbales] = useSound(timbalesSfx)
     const [playBass] = useSound(bassSfx)
     const [playBass2] = useSound(bass2Sfx)
-    
-    const [audio] = useSound(soundRecorded)
+    const [playChameleon] = useSound(chameleon)
     
     return {
-      playPerfect, playPercussion,playPiano,playTimbales,playBass,playBass2,audio,
+      playPerfect, playPercussion,playPiano,playTimbales,playBass,playBass2,playChameleon,
     }
   },
 }

@@ -92,7 +92,7 @@ export default {
       });
     },    
     stop() {
-      this.recorder.stop()
+      this.recorder.stop() 
     }
     
   },

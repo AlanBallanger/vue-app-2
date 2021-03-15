@@ -8,24 +8,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/vue-app-2/bass2.mp3"
   },
   {
-    "revision": "bc7dd2643492d52fb0eb",
-    "url": "/vue-app-2/css/about.8106e0de.css"
+    "revision": "b10100a5cde863a8861a",
+    "url": "/vue-app-2/css/about.19bad5e7.css"
   },
   {
-    "revision": "e3386028ef3894e0f5f3",
+    "revision": "3f6abb287bc3a400a3ad",
     "url": "/vue-app-2/css/app.c802df27.css"
   },
   {
-    "revision": "1f103c402674a6d3077b4a7a93f128ee",
+    "revision": "cbc826e3fd79f10a0aa5571407388298",
     "url": "/vue-app-2/index.html"
   },
   {
-    "revision": "bc7dd2643492d52fb0eb",
-    "url": "/vue-app-2/js/about.3e3e572e.js"
+    "revision": "b10100a5cde863a8861a",
+    "url": "/vue-app-2/js/about.fca6d48a.js"
   },
   {
-    "revision": "e3386028ef3894e0f5f3",
-    "url": "/vue-app-2/js/app.df94d8f8.js"
+    "revision": "3f6abb287bc3a400a3ad",
+    "url": "/vue-app-2/js/app.b6145cc1.js"
   },
   {
     "revision": "24b4eb07a79b20228e01",

@@ -13,8 +13,8 @@
       <div class="recorder">
       <audio-recorder
         upload-url="YOUR_API_URL"
-        :attempts="3"
-        :time="2"
+        :attempts="10"
+        :time="5"
         :headers="headers"
         :before-recording="callback"
         :pause-recording="callback"
@@ -25,7 +25,7 @@
         :failed-upload="callback"/>
       </div>
       <div class="analyzer">
-        <select v-on:change="choose" id="Selector">
+        <select v-on:change="choose" id="selector">
           <option value="1" selected>Perfect</option>
           <option value="2">Percussion</option>
           <option value="3">Piano</option>
@@ -69,7 +69,7 @@ export default {
   },
   methods:{
     choose(){
-      this.value = parseInt(document.getElementById('Selector').value, 10);
+      this.value = parseInt(document.getElementById('selector').value, 10);
       console.log(this.value);
       document.querySelector(".SelectInstru").src = this.instruments[this.value];
     },
@@ -115,45 +115,5 @@ export default {
 </script>
 
 <style scoped>
-  .button{
-  width: 200px;
-  height: 200px;
-  position: relative;
-  overflow: hidden;
-  border: none;
-  padding: 0;
-  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);  
-  margin: 10px;
-  border-radius: 8px;
-  cursor: pointer;
-  }
-  .image {
-  position: absolute;  
-  margin: auto;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  }
-  .form-group {
-    margin-top: 50px;
-  }
-  .ar{
-    left: 0%;
-  }
-  .audio{
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    flex-direction: column;
-    align-items: center;
-  }
-.recorder{
-  margin-top: 20px;
-}
-.analyzer{
-  margin-top: 50px;
-}
-
+  @import "../assets/appli.css";
 </style>
